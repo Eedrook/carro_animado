@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    position: relative;
+    width: auto;
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    height: 67vh; 
+}
+
+.fondoAnimado{
+    animation: fondomover 2s linear infinite;
+}
+
+@keyframes fondomover {
+    100% {
+        background-position-x: -1024px;
+    }
+}
+
+.chasis{
+    position: absolute;
+    width: 40rem;
+    top: 24rem;
+    left: 20rem;
+}
+
+.llantauno{
+    width: 105px;
+    margin-left: 20.3%;
+    margin-top: 26%;
+    position: absolute;
+}
+
+.llantaunoAnimada{
+    animation: llantaunomover 1s linear infinite;
+}
+@keyframes llantaunomover {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.llantados{
+    width: 105px;
+    margin-left: 40.9%;
+    margin-top: 26%;
+    position: absolute;
+}
+
+.llantadosAnimada{
+    animation: llantaunomover 1s linear infinite;
+}
+
+@keyframes llantadosmover {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.laluz{
+    position: absolute;
+    width: 30%;
+    margin-left: 42%;
+    margin-top: 17%;
+}
+.oculto{
+    display: none;
+}
+
+.luzAnimada{
+    animation: luzopacidad 250ms linear infinite;
+}
+
+@keyframes luzopacidad {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+
+.elpolvo{
+    width: 372.25px;
+    height: 202px;
+    background: url("../img/polvo.png");
+    position: absolute;
+    top: 400px;
+    left: 1px;
+    z-index: 100px;
+}
+.oculto{
+    display: none;
+}
+
+.polvoAnimado{
+    animation: polvo 2s infinite steps(4)
+}
+
+@keyframes polvo{
+    100%{
+        background-position-x: 785px;
+    }
+}
